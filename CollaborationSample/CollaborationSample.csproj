@@ -113,10 +113,10 @@
       <Version>3.14.2</Version>
     </PackageReference>
     <PackageReference Include="PDFTron.Android.Collab.WVS">
-      <Version>6.10.5-preview1</Version>
+      <Version>6.10.5-preview3</Version>
     </PackageReference>
     <PackageReference Include="PDFTron.Android.Tools">
-      <Version>6.10.5-preview1</Version>
+      <Version>6.10.5-preview3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Arch.Core.Common">
       <Version>1.1.1.1</Version>
