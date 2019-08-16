@@ -7,4 +7,5 @@ This repository contains sample projects using different features of the PDFTron
 | Sample | Description |
 |--|--|
 |[CollaborationSample](./CollaborationSample)| Create a real-time document collaboration app with WebViewer Server as backend
+
 ![](https://onepixel.pdftron.com/pdftron-xamarin-samples)
