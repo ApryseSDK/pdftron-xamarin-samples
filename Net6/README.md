@@ -16,19 +16,19 @@ This sample shows how to use the PDFTron mobile SDK with .NET 6.0 release candid
 
 ## .NET 6 for Android
 
-1. Open the [`Net6Android`](./net6/Net6Android) project in Visual Studio.
+1. Open the [`Net6Android`](./Net6Android) project in Visual Studio.
 2. Restore the packages.
 3. Run the project.
 
 ## .NET 6 for iOS
 
-1. Open the [`Net6iOS`](./net6/Net6iOS) project in Visual Studio.
+1. Open the [`Net6iOS`](./Net6iOS) project in Visual Studio.
 2. Restore the packages.
 3. Run the project.
 
 ## .NET MAUI
 
-1. Open the [`Net6MAUI`](./net6/Net6MAUI) project in Visual Studio.
+1. Open the [`Net6MAUI`](./Net6MAUI) project in Visual Studio.
 2. Restore the packages.
 3. Choose the platform that you want to run on.
 4. Run the project.
