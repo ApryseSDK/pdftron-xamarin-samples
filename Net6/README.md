@@ -14,21 +14,31 @@ This sample shows how to use the PDFTron mobile SDK with .NET 6.0 release candid
 
 # Instructions
 
+1. Run the following commands in your terminal:
+    ```
+    dotnet workload install android
+    dotnet workload install ios
+    dotnet workload install maui
+    dotnet workload install maui-mobile
+    dotnet workload install maui-android
+    dotnet workload install maui-ios
+    ```
+
 ## .NET 6 for Android
 
-1. Open the [`Net6Android`](./Net6Android) project in Visual Studio.
-2. Restore the packages.
-3. Run the project.
+2. Open the [`Net6Android`](./Net6Android) project in Visual Studio.
+3. Restore the packages.
+4. Run the project.
 
 ## .NET 6 for iOS
 
-1. Open the [`Net6iOS`](./Net6iOS) project in Visual Studio.
-2. Restore the packages.
-3. Run the project.
+2. Open the [`Net6iOS`](./Net6iOS) project in Visual Studio.
+3. Restore the packages.
+4. Run the project.
 
 ## .NET MAUI
 
-1. Open the [`Net6MAUI`](./Net6MAUI) project in Visual Studio.
-2. Restore the packages.
-3. Choose the platform that you want to run on.
-4. Run the project.
+2. Open the [`Net6MAUI`](./Net6MAUI) project in Visual Studio.
+3. Restore the packages.
+4. Choose the platform that you want to run on.
+5. Run the project.
