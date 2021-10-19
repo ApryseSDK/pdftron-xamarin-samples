@@ -18,4 +18,3 @@ This repository contains sample projects using different features of the PDFTron
 |--|--|
 |[Net6Android](./Net6/Net6Android)| Creates an Android app for document viewing and editing |
 |[Net6iOS](./Net6/Net6iOS)| Creates an iOS app for document viewing and editing |
-|[Net6MAUI](./Net6/Net6MAUI)| Creates a cross-platform document viewing app using the new [.NET MAUI SDK](https://github.com/dotnet/maui) |
