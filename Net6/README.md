@@ -9,7 +9,7 @@ This sample shows how to use the PDFTron mobile SDK with .NET 6.0 release candid
 * [Visual Studio](https://visualstudio.microsoft.com/downloads/) 
     * Option 1: 2022 Release Candidate or 2022 for Mac Preview 
     * Option 2: 2019 v16.11 or 2019 for Mac v8.10
-* [Android 12 SDK](https://developer.android.com/about/versions/12/setup-sdk) 
+* [Android 21 SDK](https://developer.android.com/studio) through Android Studio's SDK Manager
 * [XCode 13](https://developer.apple.com/xcode/) for iOS
 
 # Instructions
