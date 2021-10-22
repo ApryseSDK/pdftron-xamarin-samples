@@ -3,7 +3,7 @@ This sample shows how to use the PDFTron mobile SDK with .NET 6.0 release candid
 
 **Note:** Official support for the SDK is being implemented.
 
-# Prerequesites
+# Prerequisites
 
 * [.NET 6 SDK Release Candidate 1](https://dotnet.microsoft.com/download/dotnet/6.0) 
 * [Visual Studio](https://visualstudio.microsoft.com/downloads/) 
