@@ -14,9 +14,11 @@
     <PackageReference Include="PDFTron.iOS" Version="9.1.0" />
     <PackageReference Include="PDFTron.iOS.Tools" Version="9.1.0" />
   </ItemGroup>
-  <!-- Use the custom command below if app crashes due to "Library not loaded: @rpath/PDFNet.framework/PDFNet" or similar message:
-    `install_name_tool -add_rpath <path to frameworks> <path to app executable>`-->
-  <!--<Target Name="CustomAfterBuildTarget" AfterTargets="Build">
-      <Exec Command="install_name_tool -add_rpath '$(MSBuildProjectDirectory)/obj/$(Configuration)/net6.0-ios/iossimulator-x64/linker-cache/' '$(MSBuildProjectDirectory)/bin/$(Configuration)/net6.0-ios/iossimulator-x64/$(MSBuildProjectName).app/$(MSBuildProjectName)'"></Exec>
-  </Target>-->
+  <!-- Add the required rpath if it is missing.-->
+  <Target Name="CustomAfterBuildTarget" AfterTargets="Build" Condition="">
+    <Exec Command="otool -l '$(MSBuildProjectDirectory)/bin/$(Configuration)/net6.0-ios/iossimulator-x64/$(MSBuildProjectName).app/$(MSBuildProjectName)' | grep RPATH -A2 | grep '$(MSBuildProjectDirectory)/obj/$(Configuration)/net6.0-ios/iossimulator-x64/linker-cache/'" ContinueOnError="true">
+        <Output TaskParameter="ExitCode" PropertyName="GrepExitCode"/>
+    </Exec>
+    <Exec Condition="$(GrepExitCode) != 0" Command="install_name_tool -add_rpath '$(MSBuildProjectDirectory)/obj/$(Configuration)/net6.0-ios/iossimulator-x64/linker-cache/' '$(MSBuildProjectDirectory)/bin/$(Configuration)/net6.0-ios/iossimulator-x64/$(MSBuildProjectName).app/$(MSBuildProjectName)'"></Exec>
+  </Target>
 </Project>
