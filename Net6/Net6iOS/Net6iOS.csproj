@@ -17,6 +17,6 @@
   <!-- Use the custom command below if app crashes due to "Library not loaded: @rpath/PDFNet.framework/PDFNet" or similar message:
     `install_name_tool -add_rpath <path to frameworks> <path to app executable>`-->
   <!--<Target Name="CustomAfterBuildTarget" AfterTargets="Build">
-      <Exec Command="install_name_tool -add_rpath '$(MSBuildProjectDirectory)/obj/Debug/net6.0-ios/iossimulator-x64/linker-cache/' '$(MSBuildProjectDirectory)/bin/Debug/net6.0-ios/iossimulator-x64/$(MSBuildProjectName).app/$(MSBuildProjectName)'"></Exec>
+      <Exec Command="install_name_tool -add_rpath '$(MSBuildProjectDirectory)/obj/$(Configuration)/net6.0-ios/iossimulator-x64/linker-cache/' '$(MSBuildProjectDirectory)/bin/$(Configuration)/net6.0-ios/iossimulator-x64/$(MSBuildProjectName).app/$(MSBuildProjectName)'"></Exec>
   </Target>-->
 </Project>
