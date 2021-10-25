@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1700.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net6iOS", "Net6iOS.csproj", "{FFD60618-11E9-4972-88A9-744818E7D0CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFD60618-11E9-4972-88A9-744818E7D0CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD60618-11E9-4972-88A9-744818E7D0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD60618-11E9-4972-88A9-744818E7D0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD60618-11E9-4972-88A9-744818E7D0CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64F496E0-87D4-44E9-A259-383E53DE2A3D}
+	EndGlobalSection
+EndGlobal

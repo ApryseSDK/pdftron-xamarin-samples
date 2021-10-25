@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="PDFTron.Android" />
+    <None Remove="Xamarin.AndroidX.Fragment" />
+    <None Remove="PDFTron.Android.Tools" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="PDFTron.Android" Version="9.1.0" />
+    <PackageReference Include="Xamarin.AndroidX.Fragment" Version="1.2.2" />
+    <PackageReference Include="PDFTron.Android.Tools" Version="9.1.0" />
+  </ItemGroup>
+</Project>

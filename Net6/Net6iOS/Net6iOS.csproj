@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-ios</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <SupportedOSPlatformVersion>11.2</SupportedOSPlatformVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="PDFTron.iOS" />
+    <None Remove="PDFTron.iOS.Tools" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="PDFTron.iOS" Version="9.1.0" />
+    <PackageReference Include="PDFTron.iOS.Tools" Version="9.1.0" />
+  </ItemGroup>
+  <!-- Add the required rpath if it is missing.-->
+  <Target Name="CustomAfterBuildTarget" AfterTargets="Build" Condition="">
+    <Exec Command="otool -l '$(MSBuildProjectDirectory)/bin/$(Configuration)/net6.0-ios/iossimulator-x64/$(MSBuildProjectName).app/$(MSBuildProjectName)' | grep RPATH -A2 | grep '$(MSBuildProjectDirectory)/obj/$(Configuration)/net6.0-ios/iossimulator-x64/linker-cache/'" ContinueOnError="true">
+        <Output TaskParameter="ExitCode" PropertyName="GrepExitCode"/>
+    </Exec>
+    <Exec Condition="$(GrepExitCode) != 0" Command="install_name_tool -add_rpath '$(MSBuildProjectDirectory)/obj/$(Configuration)/net6.0-ios/iossimulator-x64/linker-cache/' '$(MSBuildProjectDirectory)/bin/$(Configuration)/net6.0-ios/iossimulator-x64/$(MSBuildProjectName).app/$(MSBuildProjectName)'"></Exec>
+  </Target>
+</Project>
