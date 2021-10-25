@@ -10,16 +10,9 @@ This sample shows how to use the PDFTron mobile SDK with .NET 6.0 release candid
 
 # Instructions
 
-## .NET 6 for Android
-
-1. Run `dotnet workload install android` in your terminal.
-2. Open the [`Net6Android`](./Net6Android) project in Visual Studio.
+1. Run `dotnet workload install android` and `dotnet workload install ios` in your terminal.
+    * You will need admin or sudo privileges to install the workloads. 
+2. Open the [`Net6Android`](./Net6Android) or [`Net6iOS`](./Net6iOS) project in Visual Studio.
 3. Restore the packages.
-4. Run the project.
-
-## .NET 6 for iOS
-
-1. Run `dotnet workload install ios` in your terminal.
-2. Open the [`Net6iOS`](./Net6iOS) project in Visual Studio.
-3. Restore the packages.
+    * This is done automatically by Visual Studio but can be done manually by right-clicking on the Dependencies folder -> Restore.
 4. Run the project.
